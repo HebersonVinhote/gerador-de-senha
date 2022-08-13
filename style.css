@@ -1,0 +1,95 @@
+*{
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(rgb(202, 37, 202), rgb(25, 168, 235));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.titulo{
+    text-align: center;
+    max-width: 20rem;
+    margin-bottom: 2rem;
+    color: aqua;
+}
+
+.container-input{
+    max-width: 15rem;
+}
+
+.container-input span{
+    color: white;
+    font-size: 1rem;
+}
+
+.slider{
+    margin: 0.5rem;
+    
+}
+
+.button-cta{
+    height: 2rem;
+    border: none;
+    background: violet;
+    border-radius: 10vh;
+    cursor: pointer;
+    color: aquamarine;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.button-cta:hover{
+    transform: scale(0.8);
+}
+
+.container-password{
+    max-width: 20rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.password{
+    cursor: pointer;
+    color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: violet;
+    border-radius: 10px;
+    margin: 0.5rem;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.5);
+}
+
+.tooltip{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+.container-password:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
